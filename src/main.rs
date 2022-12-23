@@ -1,8 +1,8 @@
 use std::env;
 use std::process;
 
-mod songs;
 mod config;
+mod songs;
 
 fn main() {
     let config = config::Config::new(env::args()).unwrap_or_else(|err| {
